@@ -11,7 +11,7 @@ clean:
 	rm -rf shitty *.o
 
 shitty: shitty.o
-	$(CC) $(LDFLAGS) shitty.o -o shitty
+	$(CC) shitty.o -o shitty $(LDFLAGS)
 
 shitty.o: shitty.cpp
 	$(CC) $(CFLAGS) shitty.cpp
